@@ -27,13 +27,12 @@ public class Main extends JFrame {
                 public void actionPerformed(ActionEvent e) {
                     String argomento = parolaChiave.getText();
                     GestoreStoria gestoreStoria = new GestoreStoria();
-                    Storia lamiaStoria = gestoreStoria getBeststory (argomento)
+                    Storia lamiaStoria = gestoreStoria.getBestStory(argomento);
                 
-                    String nomepersonaggio = nome.gettext();
-                    String luogoiniziale = luogo.gettext();
-                    String oggettopreferito = oggetto.gettext();
-                    string parolaChiave = parolaChiave.gettext();
-                    new StoryPage();
+                    String nomepersonaggio = nome.getText();
+                    String luogoiniziale = luogo.getText();
+                    String oggettopreferito = oggetto.getText();
+                    new StoryPage(nomepersonaggio, oggettopreferito, luogoiniziale, lamiaStoria);
                 }
             }
         );

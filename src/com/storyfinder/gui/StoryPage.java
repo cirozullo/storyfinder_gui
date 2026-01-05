@@ -1,5 +1,7 @@
 package com.storyfinder.gui;
 
+import com.storyfinder.Storia;
+
 import javax.swing.*;
 
 public class StoryPage extends JFrame {
@@ -8,13 +10,12 @@ public class StoryPage extends JFrame {
     private JLabel parole_chiavi;
     private JLabel testo_storia;
 
-    public StoryPage(String titleStoria, String parole_chiaviStoria, String testo_Storia) {
+    public StoryPage(String nomePersonaggio, String oggettiStoria, String luogoStoria, Storia storia) {
         setContentPane(StoryPagePanel);
         setTitle("Storia");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(500, 600);
         setLocationRelativeTo(null);
         setVisible(true);
-        title.setText(titleStoria);
     }
 }
