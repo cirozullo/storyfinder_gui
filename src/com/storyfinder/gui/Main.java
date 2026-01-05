@@ -26,6 +26,10 @@ public class Main extends JFrame {
             new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                    String nomepersonaggio = nome.gettext();
+                    String luogoiniziale = luogo.gettext();
+                    String oggettopreferito = oggetto.gettext();
+                    string parolaChiave = parolaChiave.gettext();
                     new StoryPage();
                     JOptionPane.showMessageDialog(Main.this, "Ciao");
                 }
