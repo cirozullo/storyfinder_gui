@@ -20,5 +20,9 @@ public class StoryPage extends JFrame {
         Title.settext(storia.gettitolo);
         parole_chiavi.settext(storia.getparole_chiavi);
         testo_storia.settext(storia.gettesto_storia);
+        String testoStoria = storia.getTesto_storia();
+        String testoStoriaFinale = testoStoria.replace("[Nome]", nomePersonaggio)
+                .replace("[Luogo]", luogoStoria)
+                .replace("[Oggetto]", oggettiStoria);
     }
 }
