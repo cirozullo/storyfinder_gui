@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="storyfinder_gui:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="storyfinder_gui.jar">
+      <element id="module-output" name="storyfinder_gui" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.13.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/storyfinder_core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-lang3-3.20.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
