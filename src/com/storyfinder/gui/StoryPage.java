@@ -17,5 +17,8 @@ public class StoryPage extends JFrame {
         setSize(500, 600);
         setLocationRelativeTo(null);
         setVisible(true);
+        Title.settext(storia.gettitolo);
+        parole_chiavi.settext(storia.getparole_chiavi);
+        testo_storia.settext(storia.gettesto_storia);
     }
 }
