@@ -30,6 +30,11 @@ public class Main extends JFrame {
                     GestoreStoria gestoreStoria = new GestoreStoria();
                     Storia lamiaStoria = gestoreStoria getBeststory (argomento)
                 
+                    String nomepersonaggio = nome.gettext();
+                    String luogoiniziale = luogo.gettext();
+                    String oggettopreferito = oggetto.gettext();
+                    string parolaChiave = parolaChiave.gettext();
+                    new StoryPage();
                     JOptionPane.showMessageDialog(Main.this, "Ciao");
                 }
             }
