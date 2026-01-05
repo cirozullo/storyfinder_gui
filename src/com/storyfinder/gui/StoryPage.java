@@ -3,12 +3,12 @@ package com.storyfinder.gui;
 import com.storyfinder.Storia;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class StoryPage extends JFrame {
     private JPanel StoryPagePanel;
     private JLabel title;
-    private JLabel parole_chiavi;
-    private JLabel testo_storia;
+    private JTextPane testo_storia;
 
     public StoryPage(String nomePersonaggio, String oggettiStoria, String luogoStoria, Storia storia) {
         setContentPane(StoryPagePanel);
@@ -17,12 +17,12 @@ public class StoryPage extends JFrame {
         setSize(500, 600);
         setLocationRelativeTo(null);
         setVisible(true);
-        Title.settext(storia.gettitolo);
-        parole_chiavi.settext(storia.getparole_chiavi);
-        testo_storia.settext(storia.gettesto_storia);
+        title.setText(storia.getTitolo());
+        title.setFont(new Font("Serif", Font.PLAIN, 32));
         String testoStoria = storia.getTesto_storia();
-        String testoStoriaFinale = testoStoria.replace("[Nome]", nomePersonaggio)
-                .replace("[Luogo]", luogoStoria)
-                .replace("[Oggetto]", oggettiStoria);
+        String testoStoriaFinale = testoStoria.replace("[nome]", nomePersonaggio)
+                .replace("[luogo]", luogoStoria)
+                .replace("[oggetto]", oggettiStoria);
+        testo_storia.setText(testoStoriaFinale);
     }
 }
