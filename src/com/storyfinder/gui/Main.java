@@ -26,7 +26,10 @@ public class Main extends JFrame {
             new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    new StoryPage();
+                    String argomento = parolaChiave.getText();
+                    GestoreStoria gestoreStoria = new GestoreStoria();
+                    Storia lamiaStoria = gestoreStoria getBeststory (argomento)
+                
                     JOptionPane.showMessageDialog(Main.this, "Ciao");
                 }
             }
