@@ -24,10 +24,8 @@ public class Main extends JFrame {
         setVisible(true);
         generaStoriaButton.addActionListener(
             new ActionListener() {
-                @Override
                 public void actionPerformed(ActionEvent e) {
                     new StoryPage();
-                    JOptionPane.showMessageDialog(Main.this, "Ciao");
                 }
             }
         );
